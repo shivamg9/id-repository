@@ -115,7 +115,6 @@ public class IdrepositaryUtil {
             LOGGER.info(IdRepoSecurityManager.getUser(), LoggerFileConstant.REQUEST_ID.toString(), requestId,
                     "IDREPO_API_RESPONSE: " + responseString);
 
-            IdResponseDTO responseObject = mapper.readValue(responseString, IdResponseDTO.class);
 			IdResponseDTO responseObject = mapper.readValue(responseString, IdResponseDTO.class);
 			if (responseObject == null) {
 				LOGGER.error(IdRepoSecurityManager.getUser(), LoggerFileConstant.REQUEST_ID.toString(), requestId,
